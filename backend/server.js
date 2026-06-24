@@ -16,10 +16,10 @@ app.get("/", (req, res) => {
   res.send("Chitkara Bajaj Challenge Backend Running");
 });
 
-// API Routes
-app.use("/api", hierarchyRoutes);
+// API Route
+app.use("/", hierarchyRoutes);
 
-// Server Port
+// Port
 const PORT = process.env.PORT || 3000;
 
 // Start Server
